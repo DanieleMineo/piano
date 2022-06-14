@@ -1,0 +1,88 @@
+/* CSS reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(#02e82c 5%, #013512); */
+    background: radial-gradient(#02e82c 2%, #013512);
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pianoforte */
+
+
+.piano-panel {
+    height: 6rem;
+    background-color: #000;
+    color: #dbac02;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(images/panel-reflex.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.piano-panel img {
+    width: 5rem;
+    margin-left: 1rem;
+    
+}
+
+.piano-panel h1 {
+    font-family: 'Sniglet', cursive;
+    color: #dbac02;
+}
+
+.piano-keys {
+    height: 12rem;
+    border-top: .5rem solid #dbac02;
+    display: flex;
+}
+
+
+.key-white{
+    width: 4rem;
+    height: 100%;
+    background-color: #fff;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    border-bottom: 6px solid #8c8c8c;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.key-black{
+    width: 3rem;
+    height: 60%;
+    background-color: #000;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    z-index: 1;
+    border-right: .5rem solid #000;
+    border-left: .5rem solid #000;
+    border-bottom: .5rem solid black;
+    border-radius: 0 0 .5rem .5rem;
+    background: linear-gradient(#737373, #0d0d0d);
+
+}
+
+.key-white:active{
+    background-color: #ddd;
+    border-bottom: 2px solid #8c8c8c;
+
+}
+
+.key-black:active{
+    background: #000;
+}
